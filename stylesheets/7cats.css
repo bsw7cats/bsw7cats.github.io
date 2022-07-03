@@ -1,0 +1,341 @@
+@charset "utf-8";
+
+html {
+  font-family: Verdana, sans-serif;
+  font-size: 15px;
+  line-height: 1.5;
+  font-weight: normal;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: "Segoe UI", Verdana, sans-serif;
+  font-weight: 400;
+  line-height: 1;
+  margin: 20px 0;
+}
+
+h1 a, h2 a, h3 a, h4 a, h5 a, h6 a {font-weight: inherit;}
+h1 {font-size: 36px}
+h2 {font-size: 30px}
+h3 {font-size: 24px}
+h4 {font-size: 20px}
+h5 {font-size: 18px}
+h6 {font-size: 16px}
+
+hr {
+  height: 0;
+  border: 0;
+  border-top: 1px solid #eee;
+  margin: 20px 0;
+}
+
+#navMenu {
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  background-color: rgb(64, 64, 64);
+}
+
+#navMenu ul {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-right: 20px;
+  margin-bottom: auto; margin-top: auto;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Gruppo,sans-serif;
+  text-align: left;
+  display: inline-block;
+ 
+  -moz-box-shadow: 10 10 10 10 rgb(127, 127, 127),2 2 2 2 rgb(127, 127, 127) inset;
+  -webkit-box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;
+  box-shadow: 0 0 0 0 rgb(127, 127, 127),0 0 0 0 rgb(127, 127, 127) inset;
+}
+
+#navMenu ul li{
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  margin-right: 20px;
+  margin-bottom: 0;
+  background-color: rgb(64, 64, 64);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Gruppo,sans-serif;
+  text-align: left;
+  list-style-type: none;
+}
+
+#navMenu ul li a {
+  display: block;	
+  text-decoration: none;
+  padding: 4px;
+  color: white;
+}
+
+#navMenu ul li:hover {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Gruppo,sans-serif;
+  text-align: left;
+}
+
+
+#navMenu ul li a:hover {
+  color: magenta;	
+}
+
+#navMenu ul li:active {
+  padding-top: 0;
+  padding-right: 0;
+  padding-bottom: 0;
+  padding-left: 0;
+  background-color: transparent;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 20px;
+  font-family: Gruppo,sans-serif;
+  text-align: left;
+}
+
+#navMenu ul ul {
+  position: absolute;
+  visibility: hidden;
+}
+
+#navMenu ul li:hover ul {
+  visibility: visible; 	
+}
+
+#navMenu ul li ul li {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  margin-bottom: 0;
+  background-color: rgb(64, 64, 64);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Gruppo",sans-serif;
+  text-align: left; 
+}
+
+#navMenu ul li ul li:hover {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgb(64, 64, 64);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 14px;
+  font-family: "Gruppo",sans-serif;
+  text-align: left;
+}
+
+#navMenu ul ul li:active {
+  padding-top: 10px;
+  padding-right: 10px;
+  padding-bottom: 10px;
+  padding-left: 10px;
+  background-color: rgb(64, 64, 64);
+  font-style: normal;
+  font-weight: normal;
+  font-size: 12px;
+  font-family: "Gruppo",sans-serif;
+  text-align: left;  
+}
+
+#navMenu ul li ul li a {
+  display: block;	
+  text-decoration: none;
+  color: white;
+}
+
+#navMenu ul li ul li a:hover {
+  display: block;	
+  text-decoration: none;
+  background-color: rgb(64, 64, 64);	
+  background: rgb(64, 64, 64);
+  color: magenta;  
+}
+
+#pagContent {
+  display: block;	
+  margin-left:auto;
+  margin-right:auto;
+  padding:0;
+  background: rgb(64, 64, 64);  
+  background-color: rgb(64, 64, 64);
+}
+
+#pagHeader {	
+  display: block;
+  overflow: hidden; 
+  position: fixed;
+  top: 0;
+  background: rgb(64, 64, 64);  
+  background-color: rgb(64, 64, 64);
+  z-index: 1000;
+}
+
+.clearFloat {
+  clear: both;
+  margin: 0;
+  padding: 0;	
+}
+
+.center {
+  margin: 0;
+  text-align: center;
+}
+
+.vertical-center {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  -ms-transform: translateY(-50%);
+  transform: translateY(-50%);
+}
+
+.bizname {
+  font-weight: bold;
+  font-size: 140%;
+  color: rgb(40, 199, 185);
+  font-family: "Gruppo",sans-serif;
+}
+.bizline {
+  font-weight: normal;
+  font-size: 100%;
+  font-family: "Gruppo",sans-serif;
+  color: white;
+}
+.menuline {
+  font-weight: normal;
+  font-style: italic;
+  font-size: 140%;
+  color: rgb(40, 199, 185);
+  font-family: "Gruppo",sans-serif;
+}
+
+.vertalign {
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%); 	
+}
+
+.pntname {
+  padding: 0 0;
+  margin: 0 0;
+  font-size: 18px;
+}
+
+/* Style the menu buttons */
+
+.btn {
+  border: none;
+  outline: none;
+  padding: 2px 4px;
+/*  background-color: #f1f1f1; */
+  color: white;
+  background-color: transparent;
+  cursor: pointer; 
+  font-size: 20px;
+}
+
+/* Style the active class, and buttons on mouse-over */
+
+.btn.active {
+  background-color: rgb(40, 199, 185);
+  color: white;
+}
+
+.btn:hover {
+/*  background-color: rgb(32, 32, 32) */
+  color: white; 
+}
+
+.pagebtn a {
+  text-decoration: none;
+}
+
+/* ----------------------------------------------------- */
+
+input[type=text], select {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+}
+
+input[type=submit] {
+  width: 100%;
+  background-color: #4CAF50;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+}
+
+/* -------------- Style the Slide Show --------------------------- */
+
+.mySlides {display:none;}
+
+.sshw-button {
+  border:none;
+  display:inline-block;
+  padding:8px 16px;
+  vertical-align:middle;
+  overflow:hidden;
+  text-decoration:none;
+  color:inherit;
+   background-color: rgb(64, 64, 64);
+  text-align:center;
+  cursor:pointer;
+  white-space:nowrap
+}
+
+.sshw-arrows {
+  color:white;
+  background-color: rgb(64, 64, 64);
+}
+
+.sshw-display-left {
+  position:absolute;
+  top:45%;
+  left:0%;
+  transform:translate(0%,-45%);
+  -ms-transform:translate(-0%,-45%)
+}
+
+.sshw-display-right {
+  position:absolute;
+  top:45%;
+  right:0%;
+  transform:translate(0%,-45%);
+  -ms-transform:translate(0%,-45%)
+}
+
+/* ----------------------------------------------------- */
