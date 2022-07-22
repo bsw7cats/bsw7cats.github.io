@@ -73,7 +73,11 @@ $(".popImg").click(function(){
   case "24x30":
     modalImg.style.width = "768px";
     modalImg.style.height = "960px";
-    break; 
+    break;
+  case "22x28":
+    modalImg.style.width = "754.3px";
+    modalImg.style.height = "960px";
+    break;     
   case "16x40":
     modalImg.style.width = "394px";
     modalImg.style.height = "960px";
@@ -85,7 +89,11 @@ $(".popImg").click(function(){
   case "24x20":
     modalImg.style.width = "960px";
     modalImg.style.height = "800px";
-    break;  
+    break;
+  case "20x24":
+    modalImg.style.width = "800px";
+    modalImg.style.height = "960px";
+    break;      
   case "15x30":
     modalImg.style.width = "480px";
     modalImg.style.height = "960px";
@@ -131,7 +139,7 @@ $(".popImg").click(function(){
     modalImg.style.height = "960px";
     break;
   case "12x12":
-    modalImg.style.width = "720px";
+    modalImg.style.width = "960px";
     modalImg.style.height = "960px";
     break;
   case "11x14":
@@ -200,7 +208,11 @@ $(".popImg").click(function(){
     break;    
   case "MiniMundus":
     modalImg.style.width = "720px";
-    modalImg.style.height = "960px";                                                                                                                                                                                                                                      
+    modalImg.style.height = "960px";
+    break;    
+  case "EBookCover":
+    modalImg.style.width = "604.4px";
+    modalImg.style.height = "960px";                                                                                                                                                                                                                                          
   }   
   var currentcontentheight = modalImg.offsetHeight + 100;
   modal.style.height = currentcontentheight + "px"; 

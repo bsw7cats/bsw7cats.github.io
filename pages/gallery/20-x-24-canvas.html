@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <meta http-equiv="Content-Type" content="text/html; charset=utf-8" /> 
+  <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+  <link rel="icon" type="image/png" href="../../images/logos/favicon.png">  
+  <title>20" x 24" Canvases</title> 
+  <link href="../../stylesheets/7cats.css" rel="stylesheet" type="text/css"/>
+  <link href="../../stylesheets/7cats-modal.css" rel="stylesheet" type="text/css"/>   
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script> 
+  <script src="https://code.jquery.com/jquery-git.js"></script>   
+  <script type="text/javascript" src="../../java/7cats.js"></script>
+  <script type="text/javascript" src="../../java/7catsJSquery.js"></script>
+</head>
+
+<body>
+
+<div id="pagCanvas" style="margin: 0px; height: 100px; min-height: 1100px; background-color: rgb(64, 64, 64);">
+
+  <div id="pagWrapper" style="width: 100%; background-color: rgb(64, 64, 64); border: 1px solid rgb(64, 64, 64);">
+
+    <div class="center" id="pagHeader" style="left: 50%; margin-left: -481px; padding-bottom: 0; margin-bottom: 0; width: 962px; display: block; border-bottom: 1px solid white;">
+         
+      <div class="center" style="display: flex; align-items: center; width: 962px; height: auto; z-index: 10; border-bottom: 1px solid white;">
+        <div style="flex-basis:10%; flex-shrink: 1; background-color: transparent; opacity: 1; border-style: none;" >
+          <img style="width: 82px; height: 81px;" src="../../images/Dartagnan_Logo.jpg" alt="" />
+        </div>
+        <div style="flex-basis: 80%;"> 
+          <div class="center" style="margin-left:auto; margin-right:auto; background-color: transparent; opacity: 1; border-style: none;">
+            <h1 style="text-align: center;"><span class="bizname">SevenCats Galerie</span></h1> 
+          </div>
+        </div>
+        <div style="flex-basis:10%; flex-shrink: 1; background-color: transparent; opacity: 1; border-style: none;" >
+          <img style="width: 82px; height: 81px;" src="../../images/logos/7cats_logo.png" alt="" />
+        </div>
+      </div>    
+
+      <div id="navMenu" style="margin-top: 2px; margin-bottom: 6px; z-index:10;">
+
+        <div style="display: flex; align-items: center;">
+          <div style="flex-basis: 15%; flex-shrink: 1; flex-grow: 0; text-align: left; padding-left: 10px;">
+            <a href="../gallery.html"><button class="btn active">Back</button></a>
+          </div>
+          <div style="flex-basis: 70%; flex-shrink: 0; flex-grow: 1;">
+            <span class="menuline" style="color: white; font-size: 30px; font-style: italic;">20" x 24" canvas size paintings</span>                      
+          </div>
+          <div class="pagebtn" style="flex-basis: 15%; flex-shrink: 1; flex-grow: 0; text-align: right; padding-right: 10px;">
+            <span id="slideindex" class="bizline" style="font-size: 20px; margin-right: 10px;">&nbsp;</span>
+            <span id="slideindex" class="bizline" style="font-size: 20px; margin-right: 10px;">of</span>            
+            <span id="totalslides" class="bizline" style="font-size: 20px; margin-right: 10px;">&nbsp;</span>                        
+          </div>
+        </div>
+
+        </div> <!--  end div navMenu -->
+                
+    </div> <!--  end div pagHeader -->
+
+    <div class="center content" id="pagContent" style="display: block;"> <!-- margin-top of content class set through jsQuery to header height plus 10px -->
+   
+      <div class="" style="position: relative; margin: auto auto; margin-top: 30px; height: 750px; width: 962px;">
+            
+      <div class="w3-content w3-display-container" style="height:730px; padding-top:13.5px;">
+      
+        <div class="w3-content w3-display-container mySlides">
+          <div class=figure>
+            <img src="../../images/bmw/20x24/20x24_Leaves&Bark.JPG" style="width: 562.5px; height: 675px;" alt="">
+            <p class="bizline" style="font-size: 24px;">Leaves &amp; Bark</p>
+          </div>                
+        </div>
+              
+        <div class="w3-content w3-display-container mySlides">
+          <div class=figure>
+            <img src="../../images/bmw/20x24/20x24_Burning.JPG" style="width: 562.5px; height: 675px;" alt="">
+            <p class="menuline" style="color: white; font-size: 24px">Burning</p>
+          </div>                
+        </div>
+      
+        <div class="w3-content w3-display-container mySlides">
+          <div class=figure>
+            <img src="../../images/bmw/20x24/20x24_Colliding_Worlds.JPG" style="width: 562.5px; height: 675px;" alt="">
+            <p class="bizline" style="font-size: 24px;">Colliding Worlds</p>
+          </div>                
+        </div>       
+        
+        <div class="w3-content w3-display-container mySlides">
+          <div class=figure>
+            <img src="../../images/bmw/20x24/20x24_Glass_River.JPG" style="width: 562.5px; height: 675px;" alt="">
+            <p class="bizline" style="font-size: 24px;">Glass River</p>
+          </div>                
+        </div>
+
+        <div class="w3-content w3-display-container mySlides">
+          <div class=figure>
+            <img src="../../images/bmw/20x24/20x24_Sand&Stones.JPG" style="width: 562.5px; height: 675px;" alt="">
+            <p class="bizline" style="font-size: 24px;">Sand &amp; Stones</p>
+          </div>                
+        </div>     
+
+        <button class="sshw-button sshw-arrows sshw-display-left" style="font-size: 28px;" onclick="plusDivs(-1)">&#10094;</button>
+        <button class="sshw-button sshw-arrows sshw-display-right" style="font-size: 28px;"onclick="plusDivs(1)">&#10095;</button>
+        
+      </div>     
+ 
+      </div>
+      
+    </div> <!-- end pagContent div -->
+          
+    <div class="center" id="pagFooter" style="display: block; position: relative; margin-left: auto; margin-right: auto; margin-top: 50px; width: 962px; border-top: 1px solid white;">    
+        
+    <div class="center" style="display: block; margin-left:auto; margin-right:auto; margin-top: 15px; width: 962px; height: 80px;"> 
+      <p style="text-align: justify; text-indent: 10px; margin-top: 5px;"><span class="bizline">Seven Cats Galerie LLC was founded by Brigitte Wurm to share the artistic vision of her paintings in a gallery-like setting.</span></p>
+      <div style="display: flex; align-items: center; margin-top: -15px;">
+        <div style="flex-basis: 35%; opacity: 1; margin-right: 30px;">
+          <p class="bizline" style="text-align: left; text-indent: 10px;">Seven Cats Galerie LLC &nbsp; | &nbsp; Albany NY</p>
+        </div>  
+        <div style="flex-basis: 2%; opacity: 1; margin-right: 30px;"><span style="color: white; font-size: 200%;">&#8900;</span></div>
+        <div style="flex-basis: 10%; opacity: 1; margin-right: 30px;" onclick="Lnk2FaceBook()">
+          <a id="facebook-lnk" href="#" class="" target="_blank">
+          <img style="width: 30px; height: 30px;" alt="Find us on Facebook" class="" src="../../images/logos/facebook_social media_icon.png" /></a>
+        </div>
+        <div style="flex-basis: 2%; opacity: 1; margin-right: 30px;"><span style="color: white; font-size: 200%;">&#8900;</span></div>
+        <div style="flex-basis: 12%; opacity: 1;" onclick="Lnk2YouTube()">
+          <a id="youtube-lnk" href="#" class="" target="_blank">
+          <img style="width: 99.25px; height: 22.25px;" alt="Find us on YouTube" class="" src="../../images/logos/yt_logo_rgb_dark.png" /></a>
+        </div>          
+      </div>
+      <div class="center">
+        <p class="bizline" style="text-align: center">&copy; &nbsp; SevenCats Galerie LLC &nbsp; 2022</p>
+      </div>      
+    </div>
+
+    </div> <!-- end pagFooter div -->
+
+  </div> <!-- end pagWrapper div -->
+        
+</div> <!-- end pagCanvas div -->
+
+</body>
+</html>
