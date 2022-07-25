@@ -52,6 +52,34 @@ function showDivs(n) {
 
 $( document ).ready( initDivs );
 
+function BMW_Works_1_Apple_Lnk() {
+  
+  var link = document.getElementById("bmw-works-1-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/flowering-art-the-paintings-of-brigitte-m-wurm/id6443171995?ls=1";
+}
+
+function BMW_Works_2_Apple_Lnk() {
+  
+  var link = document.getElementById("bmw-works-2-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/flowering-art-the-paintings-of-brigitte-m-wurm/id6443172267?ls=1";
+}
+
+function BMW_Works_3_Apple_Lnk() {
+  
+  var link = document.getElementById("bmw-works-3-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/flowering-art-the-paintings-of-brigitte-m-wurm/id6443172615?ls=1";
+}
+
+function BMW_Works_4_Apple_Lnk() {
+  
+  var link = document.getElementById("bmw-works-4-apple-lnk");
+  
+  link.href = "https://books.apple.com/us/book/flowering-art-the-paintings-of-brigitte-m-wurm/id6443172264?ls=1";
+}
+
 function BMW_Works_1_Google_Lnk() {
   
   var link = document.getElementById("bmw-works-1-google-lnk");
